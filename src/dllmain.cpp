@@ -38,7 +38,7 @@ void WINAPI WriteProcessMemoryDetour(HANDLE hProcess, LPVOID lpBaseAddress, LPCV
 	return pWriteProcessMemory(hProcess, lpBaseAddress, lpBuffer, nSize, lpNumberOfBytesWritten);
 }
 
-void unmapper() {
+void Unmapper() {
 	AllocConsole();
 	FILE* file;
 	freopen_s(&file, "CONOUT$", "w", stdout);
@@ -61,7 +61,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        unmapper();
+        Unmapper();
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:

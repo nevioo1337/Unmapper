@@ -1,5 +1,5 @@
 # Unmapper
-Unmapper is a powerful tool that allows you to easily dump mapped PE files by hooking WinAPI functions. This versatile tool is perfect for those looking to crack or analyze cheats.
+Unmapper is a powerful tool that allows you to easily dump mapped PE files by hooking WriteProcessMemory.
 
 ![Screenshot 2023-05-09 191904](https://github.com/nevioo1337/Unmapper/assets/102999825/4a6edb6d-7bbb-4bec-80b0-123d090b7b82)
 
